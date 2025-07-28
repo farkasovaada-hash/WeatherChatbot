@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Chatbot</title>
+</head>
+<body>
+    <h2>🌤️ Weather Chatbot</h2>
+    <form method="POST">
+        <label>City:</label>
+        <input type="text" name="city" required><br><br>
+        <label>Ask a weather question:</label>
+        <input type="text" name="question" required><br><br>
+        <button type="submit">Ask</button>
+    </form>
+    {% if answer %}
+        <p><strong>🤖 Answer:</strong> {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
