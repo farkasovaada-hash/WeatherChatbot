@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import requests
+import os  # ✅ ADD THIS LINE
 
 app = Flask(__name__)
 
